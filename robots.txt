@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ismetaltnbas.github.io/katkatzengin/sitemap.xml
