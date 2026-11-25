@@ -1,0 +1,18 @@
+# Kat Kat Zengin
+
+> Türkçe inşaat ve müteahhitlik oyunu (iOS, Android). Arsa al, kat çık, daire sat ya da kirala; kamu ihaleleri, kentsel dönüşüm, kulüpler, borsa ve oyuncu sohbeti. Ücretsiz.
+
+## Sayfalar
+
+- [Ana sayfa](https://katkatzengin.com/): oyunun özellikleri, ülkeler, ekran görüntüleri, sık sorulanlar
+- [Kılavuz](https://katkatzengin.com/kilavuz.html): nasıl oynanır, taktikler
+- [Destek](https://katkatzengin.com/destek.html): iletişim destek@katkatzengin.com
+- [Gizlilik](https://katkatzengin.com/gizlilik.html)
+
+## Yazılar
+
+- [Türkçe inşaat oyunu: Kat Kat Zengin ile müteahhitliği oyna](https://katkatzengin.com/insaat-oyunu.html): Kat Kat Zengin, Türkçe bir inşaat, müteahhitlik ve emlak oyunu. Arsa al, kat çık, daire sat ya da kirala, ihale kazan, şirketini büyüt. iOS ve Android, ücretsiz.
+- [İnşaat aşamaları: arsadan anahtar teslime adım adım](https://katkatzengin.com/insaat-asamalari.html): Bir bina nasıl yapılır? İmar durumu, proje ve ruhsat, hafriyat, temel, kaba inşaat, çatı, ince işler ve iskân: inşaat aşamalarının sade anlatımı.
+- [Arsa alırken nelere dikkat edilir? 9 madde](https://katkatzengin.com/arsa-alirken-dikkat.html): Arsa almadan önce kontrol edilecek 9 madde: imar durumu, emsal (KAKS) ve TAKS hesabı, tapu kayıtları, yol cephesi, zemin, altyapı ve masraflar.
+- [Kentsel dönüşüm ve kat karşılığı inşaat nasıl işler?](https://katkatzengin.com/kentsel-donusum-kat-karsiligi.html): Kat karşılığı inşaat nedir, sözleşmede neler olmalı, kentsel dönüşümde karar nasıl alınır? Arsa sahibi ve müteahhit için sade anlatım.
+- [Müteahhit nasıl olunur? Yetki belgesinden ilk projeye](https://katkatzengin.com/muteahhit-nasil-olunur.html): Yapı müteahhidi olmak için şirket kurulumu, yapı müteahhitliği yetki belgesi, grup sistemi, iş deneyimi ve ilk projede dikkat edilecekler.
