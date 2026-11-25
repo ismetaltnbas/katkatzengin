@@ -30,9 +30,11 @@
 <header class="top">
   <div class="wrap">
     <a class="brand" href="./"><img src="img/icon-180.png" alt="" width="36" height="36">Kat Kat <b>Zengin</b></a>
-    <nav class="menu" aria-label="Ana menü"><a href="./">Ana sayfa</a><a href="kilavuz.html">Kılavuz</a><a href="videolar.html">Videolar</a><a href="destek.html">Destek</a><a class="cta-sm" href="./#indir">İndir</a></nav>
+    <button class="burger" aria-label="Menüyü aç" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav class="menu" id="menu" aria-label="Ana menü"><a href="./">Ana sayfa</a><a href="kilavuz.html">Kılavuz</a><a href="videolar.html">Videolar</a><a href="destek.html">Destek</a><a class="cta-sm" href="./#indir">İndir</a></nav>
   </div>
 </header>
+<div class="mbar" role="complementary" aria-label="Hızlı erişim"><a class="btn gold" href="./#indir">📲 Yakında mağazalarda</a><a class="btn ghost" href="kilavuz.html">Kılavuz</a></div>
 
 <main id="icerik" class="page"><div class="wrap center" style="padding:60px 0">
   <div class="kicker">404</div><h1>Bu kat henüz <span class="gold-text">dikilmedi</span></h1>
@@ -53,6 +55,10 @@
   </div>
 </footer>
 <script>
+// Mobil menü
+(function(){var b=document.querySelector('.burger'),m=document.getElementById('menu');if(!b||!m)return;
+b.addEventListener('click',function(){var o=document.body.classList.toggle('nav-open');b.setAttribute('aria-expanded',o?'true':'false');});
+m.addEventListener('click',function(e){if(e.target.tagName==='A'){document.body.classList.remove('nav-open');b.setAttribute('aria-expanded','false');}});})();
 // Görünürken yumuşak belirme (JS kapalıysa içerik zaten görünür)
 (function(){var els=document.querySelectorAll('.reveal');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
 var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}})},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)});})();

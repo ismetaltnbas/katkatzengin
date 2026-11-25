@@ -39,9 +39,11 @@
 <header class="top">
   <div class="wrap">
     <a class="brand" href="./"><img src="img/icon-180.png" alt="" width="36" height="36">Kat Kat <b>Zengin</b></a>
-    <nav class="menu" aria-label="Ana menü"><a href="./" aria-current="page">Ana sayfa</a><a href="kilavuz.html">Kılavuz</a><a href="videolar.html">Videolar</a><a href="destek.html">Destek</a><a class="cta-sm" href="./#indir">İndir</a></nav>
+    <button class="burger" aria-label="Menüyü aç" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav class="menu" id="menu" aria-label="Ana menü"><a href="./" aria-current="page">Ana sayfa</a><a href="kilavuz.html">Kılavuz</a><a href="videolar.html">Videolar</a><a href="destek.html">Destek</a><a class="cta-sm" href="./#indir">İndir</a></nav>
   </div>
 </header>
+<div class="mbar" role="complementary" aria-label="Hızlı erişim"><a class="btn gold" href="./#indir">📲 Yakında mağazalarda</a><a class="btn ghost" href="kilavuz.html">Kılavuz</a></div>
 
 <main id="icerik">
   <section class="hero">
@@ -76,7 +78,7 @@
         <h2>Gerçek bir müteahhidin<br>her kararı senin elinde</h2>
         <p class="lead">İnşaat, emlak, finans ve rekabet tek oyunda. Her sistem birbirine bağlı: malzemeden kıstığın para yarın itibarına mal olabilir.</p>
       </div>
-      <div class="cards"><div class="card reveal"><div class="ic">🗺️</div><h3>Arsa, imar ve harita</h3><p>İl il, ilçe ilçe gerçek harita. Her arsanın kat sınırı, zemini, manzarası ve fiyatı farklı; Ruhsatla yeni ilçeler açılır.</p></div><div class="card reveal"><div class="ic">🏗️</div><h3>Canlı şantiye</h3><p>Hafriyattan iskâna yedi aşama. Ustabaşı, işçi, kalite ve mimari üslup binanın hızını, sağlamlığını ve değerini belirler.</p></div><div class="card reveal"><div class="ic">🚜</div><span class="new">YENİ</span><h3>Kademeli makine parkı</h3><p>Kamyondan kule vince sekiz makine. Her biri kendi işinde uzman: hafriyat, temel, kaba inşaat, çatı ya da yüksek bina.</p></div><div class="card reveal"><div class="ic">🏠</div><span class="new">YENİ</span><h3>Kat Kat İlan: sat ya da kirala</h3><p>Dairelerini ilana koy, alıcılarla pazarlık et, emlakçıyla anlaş. Kiralıkta kirayı piyasanın %80–%120’si arasında sen belirle.</p></div><div class="card reveal"><div class="ic">🏛️</div><h3>Kamu ihaleleri</h3><p>Kapalı zarf: düşük teklif kazanır ama kâr bırakmayabilir. Sonuç tablosunda kim kazandı, kaçıncı sıradaydın gör.</p></div><div class="card reveal"><div class="ic">🌉</div><h3>Mega projeler</h3><p>Teleferikten havalimanına yap-işlet-devret projeler: yıllarca gelir, büyük itibar, kalıcı miras.</p></div><div class="card reveal"><div class="ic">⚽</div><span class="new">YENİ</span><h3>18 kulüplük lig</h3><p>Gerçek şehirler, kurgusal kulüpler. Aynı anda üç forma sponsorluğu, istediğin kadar kulüp; şampiyonluk ve kupalar.</p></div><div class="card reveal"><div class="ic">💬</div><span class="new">YENİ</span><h3>Meydan: oyuncu sohbeti</h3><p>Ülke ve il meydanında konuş, binanı kart olarak paylaş. Onaylı arkadaşlık, özel mesaj, engelleme ve şikâyet.</p></div><div class="card reveal"><div class="ic">🏦</div><h3>Banka ve kredi notu</h3><p>Kredi çek, düzenli öde, notunu yükselt. Not iyileştikçe faiz düşer, limit büyür.</p></div><div class="card reveal"><div class="ic">📈</div><h3>Borsa, fon ve kripto</h3><p>Herkes için aynı canlı piyasa. Hisse ve fonlar her gün getiri öder; alım-satım zamanlaması senin elinde.</p></div><div class="card reveal"><div class="ic">🏘️</div><span class="new">YENİ</span><h3>Mahalle nabzı</h3><p>Sakinlerin yorumları gerçek: kaliteli bina satışları ve itibarı artırır, malzemeden kısmak geri teper.</p></div><div class="card reveal"><div class="ic">🏆</div><h3>Aylık lig ve rütbeler</h3><p>Ülkende ve ilinde her ay ilk üçe gir, Ruhsat ve kupa kazan. Çırak firmadan Şehrin kurucusuna altı rütbe.</p></div></div>
+      <div class="cards scroller"><div class="card reveal"><div class="ic">🗺️</div><h3>Arsa, imar ve harita</h3><p>İl il, ilçe ilçe gerçek harita. Her arsanın kat sınırı, zemini, manzarası ve fiyatı farklı; Ruhsatla yeni ilçeler açılır.</p></div><div class="card reveal"><div class="ic">🏗️</div><h3>Canlı şantiye</h3><p>Hafriyattan iskâna yedi aşama. Ustabaşı, işçi, kalite ve mimari üslup binanın hızını, sağlamlığını ve değerini belirler.</p></div><div class="card reveal"><div class="ic">🚜</div><span class="new">YENİ</span><h3>Kademeli makine parkı</h3><p>Kamyondan kule vince sekiz makine. Her biri kendi işinde uzman: hafriyat, temel, kaba inşaat, çatı ya da yüksek bina.</p></div><div class="card reveal"><div class="ic">🏠</div><span class="new">YENİ</span><h3>Kat Kat İlan: sat ya da kirala</h3><p>Dairelerini ilana koy, alıcılarla pazarlık et, emlakçıyla anlaş. Kiralıkta kirayı piyasanın %80–%120’si arasında sen belirle.</p></div><div class="card reveal"><div class="ic">🏛️</div><h3>Kamu ihaleleri</h3><p>Kapalı zarf: düşük teklif kazanır ama kâr bırakmayabilir. Sonuç tablosunda kim kazandı, kaçıncı sıradaydın gör.</p></div><div class="card reveal"><div class="ic">🌉</div><h3>Mega projeler</h3><p>Teleferikten havalimanına yap-işlet-devret projeler: yıllarca gelir, büyük itibar, kalıcı miras.</p></div><div class="card reveal"><div class="ic">⚽</div><span class="new">YENİ</span><h3>18 kulüplük lig</h3><p>Gerçek şehirler, kurgusal kulüpler. Aynı anda üç forma sponsorluğu, istediğin kadar kulüp; şampiyonluk ve kupalar.</p></div><div class="card reveal"><div class="ic">💬</div><span class="new">YENİ</span><h3>Meydan: oyuncu sohbeti</h3><p>Ülke ve il meydanında konuş, binanı kart olarak paylaş. Onaylı arkadaşlık, özel mesaj, engelleme ve şikâyet.</p></div><div class="card reveal"><div class="ic">🏦</div><h3>Banka ve kredi notu</h3><p>Kredi çek, düzenli öde, notunu yükselt. Not iyileştikçe faiz düşer, limit büyür.</p></div><div class="card reveal"><div class="ic">📈</div><h3>Borsa, fon ve kripto</h3><p>Herkes için aynı canlı piyasa. Hisse ve fonlar her gün getiri öder; alım-satım zamanlaması senin elinde.</p></div><div class="card reveal"><div class="ic">🏘️</div><span class="new">YENİ</span><h3>Mahalle nabzı</h3><p>Sakinlerin yorumları gerçek: kaliteli bina satışları ve itibarı artırır, malzemeden kısmak geri teper.</p></div><div class="card reveal"><div class="ic">🏆</div><h3>Aylık lig ve rütbeler</h3><p>Ülkende ve ilinde her ay ilk üçe gir, Ruhsat ve kupa kazan. Çırak firmadan Şehrin kurucusuna altı rütbe.</p></div></div><p class="swipe">Kaydır →</p>
     </div>
   </section>
 
@@ -118,7 +120,7 @@
         <div class="kicker">Oyundan kareler</div>
         <h2>Şehrin seninle büyür</h2>
       </div>
-      <div class="shots">
+      <div class="shots scroller">
         <figure class="shot big reveal"><img src="img/hq-merkez.jpg" alt="Gece ışıklandırılmış kurumsal merkez binası" width="960" height="540" loading="lazy"><figcaption>Merkez binası: zirveye bir adım kala</figcaption></figure>
         <figure class="shot reveal"><img src="img/ofis-mahalle.jpg" alt="Mahalle ofisi ve maket" width="960" height="540" loading="lazy"><figcaption>Mahalle ofisi</figcaption></figure>
         <figure class="shot reveal"><img src="img/santiye-cati.webp" alt="Çatı aşamasındaki rezidans" width="1120" height="1040" loading="lazy"><figcaption>Rezidansta çatı aşaması</figcaption></figure>
@@ -136,7 +138,7 @@
         <h2>Çıraktan <span class="gold-text">şehrin kurucusuna</span></h2>
         <p class="lead">İtibar kazandıkça kredi limitin büyür, alıcılar daha iyi teklif verir, ihale teminatın düşer; her rütbede yeni ilçeler ve projeler açılır.</p>
       </div>
-      <div class="ladder"><div class="rung reveal"><div class="e">🧱</div><b>Çırak firma</b><span>0+ itibar</span></div><div class="rung reveal"><div class="e">🔨</div><b>Kalfa</b><span>15+ itibar</span></div><div class="rung reveal"><div class="e">🛠</div><b>Usta</b><span>30+ itibar</span></div><div class="rung reveal"><div class="e">🏗</div><b>Müteahhit</b><span>50+ itibar</span></div><div class="rung reveal"><div class="e">🏙</div><b>Büyük müteahhit</b><span>70+ itibar</span></div><div class="rung reveal"><div class="e">👑</div><b>Şehrin kurucusu</b><span>88+ itibar</span></div></div>
+      <div class="ladder scroller"><div class="rung reveal"><div class="e">🧱</div><b>Çırak firma</b><span>0+ itibar</span></div><div class="rung reveal"><div class="e">🔨</div><b>Kalfa</b><span>15+ itibar</span></div><div class="rung reveal"><div class="e">🛠</div><b>Usta</b><span>30+ itibar</span></div><div class="rung reveal"><div class="e">🏗</div><b>Müteahhit</b><span>50+ itibar</span></div><div class="rung reveal"><div class="e">🏙</div><b>Büyük müteahhit</b><span>70+ itibar</span></div><div class="rung reveal"><div class="e">👑</div><b>Şehrin kurucusu</b><span>88+ itibar</span></div></div>
     </div>
   </section>
 
@@ -189,6 +191,10 @@
   </div>
 </footer>
 <script>
+// Mobil menü
+(function(){var b=document.querySelector('.burger'),m=document.getElementById('menu');if(!b||!m)return;
+b.addEventListener('click',function(){var o=document.body.classList.toggle('nav-open');b.setAttribute('aria-expanded',o?'true':'false');});
+m.addEventListener('click',function(e){if(e.target.tagName==='A'){document.body.classList.remove('nav-open');b.setAttribute('aria-expanded','false');}});})();
 // Görünürken yumuşak belirme (JS kapalıysa içerik zaten görünür)
 (function(){var els=document.querySelectorAll('.reveal');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
 var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}})},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)});})();

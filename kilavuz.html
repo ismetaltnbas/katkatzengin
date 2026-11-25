@@ -37,7 +37,7 @@
         { "@type": "HowToStep", "name": "Şirketini kur", "text": "Ülkeni, karakterini ve şirket adını seç." },
         { "@type": "HowToStep", "name": "Arsa al", "text": "Şehir sekmesinde bir bölge ve ilçe seç, uygun fiyatlı bir arsa satın al; zemin etüdü yaptır." },
         { "@type": "HowToStep", "name": "Projeyi başlat", "text": "Bina tipini, kat sayısını, daire planını ve kaliteyi seç; işçileri ata ve inşaatı başlat." },
-        { "@type": "HowToStep", "name": "Daireleri sat", "text": "Bina bitince Projeler › Kat Kat Kat İlan'da fiyatı ayarla, alıcı tekliflerini kabul et ya da emlakçıyla anlaş." }
+        { "@type": "HowToStep", "name": "Daireleri sat", "text": "Bina bitince Projeler › Kat Kat İlan'da fiyatı ayarla, alıcı tekliflerini kabul et ya da emlakçıyla anlaş." }
       ]
     },
     {
@@ -56,9 +56,11 @@
 <header class="top">
   <div class="wrap">
     <a class="brand" href="./"><img src="img/icon-180.png" alt="" width="36" height="36">Kat Kat <b>Zengin</b></a>
-    <nav class="menu" aria-label="Ana menü"><a href="./">Ana sayfa</a><a href="kilavuz.html" aria-current="page">Kılavuz</a><a href="videolar.html">Videolar</a><a href="destek.html">Destek</a><a class="cta-sm" href="./#indir">İndir</a></nav>
+    <button class="burger" aria-label="Menüyü aç" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav class="menu" id="menu" aria-label="Ana menü"><a href="./">Ana sayfa</a><a href="kilavuz.html" aria-current="page">Kılavuz</a><a href="videolar.html">Videolar</a><a href="destek.html">Destek</a><a class="cta-sm" href="./#indir">İndir</a></nav>
   </div>
 </header>
+<div class="mbar" role="complementary" aria-label="Hızlı erişim"><a class="btn gold" href="./#indir">📲 Yakında mağazalarda</a><a class="btn ghost" href="kilavuz.html">Kılavuz</a></div>
 <main id="icerik" class="wrap doc">
   <nav class="toc" aria-label="Kılavuz içindekiler">
     <b>İçindekiler</b>
@@ -66,7 +68,7 @@
     <a href="#ofis">2. Ofis ekranı</a>
     <a href="#arsa">3. Arsa ve harita</a>
     <a href="#insaat">4. İnşaat</a>
-    <a href="#satis">5. Satış ve Kat Kat Kat İlan</a>
+    <a href="#satis">5. Satış ve Kat Kat İlan</a>
     <a href="#donusum">6. Kentsel dönüşüm</a>
     <a href="#ihale">7. İhaleler ve kamu işleri</a>
     <a href="#sirket">8. Şirketim: ekip ve tesisler</a>
@@ -122,8 +124,8 @@
     <p>Her aşamanın maliyeti aşama başında o günün malzeme fiyatlarıyla ödenir. Kasa yetmezse şantiye bekler. İşçi sayısı idealine yaklaştıkça inşaat hızlanır; Şirketim › Ekip'te her şantiyenin yanındaki −/+ ve <b>Doldur</b> düğmeleriyle işçileri kaydırabilirsin.</p>
     <div class="tip">⚠ "Malzemeden kısmak" maliyeti düşürür ama yapı denetiminde yakalanırsan ceza ve itibar kaybı yaşarsın.</div>
 
-    <h2 id="satis">5. Satış ve Kat Kat Kat İlan</h2>
-    <p>Biten bina <b>kendiliğinden satılmaz ve kiralanmaz</b>. Projeler › <b>Kat Kat Kat İlan</b>'ın iki sekmesi var: <b>Satılık</b> ve <b>Kiralık</b>.</p>
+    <h2 id="satis">5. Satış ve Kat Kat İlan</h2>
+    <p>Biten bina <b>kendiliğinden satılmaz ve kiralanmaz</b>. Projeler › <b>Kat Kat İlan</b>'ın iki sekmesi var: <b>Satılık</b> ve <b>Kiralık</b>.</p>
     <ul>
       <li><b>Kendin ilana koy</b> (küçük ilan ücreti, komisyon yok) ya da <b>emlakçıyla anlaş</b> (ilan ücreti yok, daha hızlı, komisyonlu).</li>
       <li>Fiyatı %80–%130 arasında ayarlarsın; bölgedeki ilanlarla karşılaştırması yanında yazar.</li>
@@ -257,6 +259,10 @@
   </div>
 </footer>
 <script>
+// Mobil menü
+(function(){var b=document.querySelector('.burger'),m=document.getElementById('menu');if(!b||!m)return;
+b.addEventListener('click',function(){var o=document.body.classList.toggle('nav-open');b.setAttribute('aria-expanded',o?'true':'false');});
+m.addEventListener('click',function(e){if(e.target.tagName==='A'){document.body.classList.remove('nav-open');b.setAttribute('aria-expanded','false');}});})();
 // Görünürken yumuşak belirme (JS kapalıysa içerik zaten görünür)
 (function(){var els=document.querySelectorAll('.reveal');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
 var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}})},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)});})();
