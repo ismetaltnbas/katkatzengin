@@ -315,3 +315,10 @@ footer .legal span:first-child::before { content: "◆ "; color: #E2B04A; }
 @media (max-width: 980px) { .countries { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 520px) { .countries { grid-template-columns: 1fr; } }
 .country .cur.long { font-size: 22px; letter-spacing: 1px; }
+
+/* Sayfa içi bağlantılar yapışkan başlığın altında kalmasın */
+html { scroll-padding-top: 84px; }
+[id] { scroll-margin-top: 84px; }
+@media (max-width: 760px) { html { scroll-padding-top: 120px; } [id] { scroll-margin-top: 120px; } }
+span.store[aria-disabled] { cursor: default; opacity: .92; }
+a.store:hover { border-color: #E2B04A; }
