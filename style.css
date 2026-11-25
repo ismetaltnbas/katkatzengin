@@ -274,3 +274,29 @@ footer .legal { margin-top: 30px; padding-top: 20px; border-top: 1px solid #ffff
 @media (max-width: 960px) { .hero .wrap { grid-template-columns: 1fr; } .device { transform: none; } }
 .hero { min-height: 0; background: radial-gradient(900px 500px at 75% 40%, #E9B95A1f, transparent 65%), radial-gradient(700px 400px at 10% 90%, #2A6EA61a, transparent 60%); }
 .hero::after { display: none; }
+
+/* Galeri: eşit ızgara, görselin altında altın başlık şeridi */
+.shots { grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.shot, .shot.big { grid-column: auto; grid-row: auto; display: flex; flex-direction: column; background: linear-gradient(180deg, #0E1622, #0A111A); border: 1px solid #E2B04A26; border-radius: 16px; box-shadow: 0 10px 30px #0006; transition: border-color .3s, transform .3s; }
+.shot:hover { border-color: #E2B04A80; transform: translateY(-3px); }
+.shot .ph { overflow: hidden; border-bottom: 1px solid #E2B04A33; background: #05070B; }
+.shot img, .shot.big img { display: block; width: 100%; height: auto; aspect-ratio: 2048 / 945; object-fit: cover; }
+.shot figcaption { position: static; display: flex; align-items: center; gap: 12px; padding: 13px 16px 14px; background: none; color: inherit; font-size: inherit; }
+.shot figcaption .n { flex: none; font-family: var(--serif, Georgia, serif); font-size: 22px; font-weight: 700; line-height: 1; background: linear-gradient(180deg, #F6D98A, #C8922E); -webkit-background-clip: text; background-clip: text; color: transparent; min-width: 30px; }
+.shot figcaption .tx { display: flex; flex-direction: column; gap: 3px; min-width: 0; padding-left: 12px; border-left: 1px solid #E2B04A40; }
+.shot figcaption b { font-size: 15px; font-weight: 800; letter-spacing: .2px; background: linear-gradient(180deg, #F8E2A0, #D9A441); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.shot figcaption small { font-size: 12.5px; color: #9AA7B8; line-height: 1.35; }
+@media (max-width: 980px) { .shots { grid-template-columns: repeat(2, 1fr); } .shot, .shot.big { grid-column: auto; } }
+@media (max-width: 640px) { .shots { grid-template-columns: 1fr; } }
+@media (max-width: 640px) { .shots.scroller .shot img, .shots.scroller .shot.big img { aspect-ratio: 2048 / 945; } }
+
+/* Alt bilgi: altın çizgi, altın başlıklar */
+footer { position: relative; background: radial-gradient(900px 260px at 50% 0%, #E2B04A12, transparent 70%), #04070B; border-top: 0; }
+footer::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 1px; background: linear-gradient(90deg, transparent, #E2B04A99 30%, #F6D98A 50%, #E2B04A99 70%, transparent); }
+footer h4 { font-size: 12px; letter-spacing: 2.5px; background: linear-gradient(180deg, #F6D98A, #C8922E); -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: 14px; }
+footer h4::after { content: ""; display: block; width: 26px; height: 2px; margin-top: 8px; border-radius: 2px; background: linear-gradient(90deg, #E2B04A, transparent); }
+footer a { transition: color .2s, transform .2s; }
+footer a:hover { color: #F6D98A; transform: translateX(3px); }
+footer .brand b { color: #E2B04A; }
+footer .legal { border-top: 1px solid #E2B04A26; color: #8592A3; }
+footer .legal span:first-child::before { content: "◆ "; color: #E2B04A; }
