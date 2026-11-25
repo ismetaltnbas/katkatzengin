@@ -263,3 +263,14 @@ footer .legal { margin-top: 30px; padding-top: 20px; border-top: 1px solid #ffff
   .mbar .btn.ghost { flex: 0 0 auto; }
   body { padding-bottom: 76px; }
 }
+.vid video { width: 100%; aspect-ratio: 2796 / 1290; display: block; background: #0D1A28; }
+.shot img { aspect-ratio: 2048 / 945; }
+.media img { width: 100%; aspect-ratio: 2048 / 945; object-fit: cover; }
+/* Kahraman: solda metin, sağda oyun ekranı (telefon çerçevesi) */
+.hero .wrap { display: grid; grid-template-columns: 1fr 1.15fr; gap: 40px; align-items: center; }
+.device { margin: 0; padding: 10px; border-radius: 30px; background: linear-gradient(160deg, #2a3648, #0c1420); border: 1px solid #ffffff22;
+  box-shadow: 0 40px 90px #000c, 0 0 0 1px #E9B95A33, inset 0 0 0 2px #00000080; transform: perspective(1400px) rotateY(-9deg) rotateX(3deg); }
+.device img { border-radius: 22px; width: 100%; aspect-ratio: 2048 / 945; object-fit: cover; }
+@media (max-width: 960px) { .hero .wrap { grid-template-columns: 1fr; } .device { transform: none; } }
+.hero { min-height: 0; background: radial-gradient(900px 500px at 75% 40%, #E9B95A1f, transparent 65%), radial-gradient(700px 400px at 10% 90%, #2A6EA61a, transparent 60%); }
+.hero::after { display: none; }
