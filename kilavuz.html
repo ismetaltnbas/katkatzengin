@@ -2,21 +2,27 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kat Kat Zengin Kullanım Kılavuzu – Başlangıç, İnşaat, Satış, Kredi Notu, İhale Rehberi</title>
-<meta name="description" content="Kat Kat Zengin oyun rehberi: ilk arsayı alma, inşaat aşamaları, daire satışı, kentsel dönüşüm, kamu ihaleleri, kredi notu, malzeme stoku, borsa ve fonlar, aile ve arkadaş ligi. İpuçları ve taktikler.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kat Kat Zengin Kullanım Kılavuzu – Başlangıç, İnşaat, Satış, Kira, İhale, Kulüp, Meydan</title>
+<meta name="description" content="Kat Kat Zengin rehberi: ilk arsa, inşaat, satış ve kiralama, ihaleler, kulüpler, kredi notu, Meydan sohbeti ve usta taktikleri.">
 <link rel="canonical" href="https://ismetaltnbas.github.io/katkatzengin/kilavuz.html">
-<meta name="theme-color" content="#070F1A">
-<meta property="og:type" content="article">
+<meta name="theme-color" content="#05090F">
+<meta name="color-scheme" content="dark">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
 <meta property="og:locale" content="tr_TR">
 <meta property="og:site_name" content="Kat Kat Zengin">
-<meta property="og:title" content="Kat Kat Zengin Kullanım Kılavuzu">
-<meta property="og:description" content="Başlangıçtan haftalık lige: tüm sistemler, ipuçları ve taktikler.">
+<meta property="og:title" content="Kat Kat Zengin Kullanım Kılavuzu – Başlangıç, İnşaat, Satış, Kira, İhale, Kulüp, Meydan">
+<meta property="og:description" content="Kat Kat Zengin rehberi: ilk arsa, inşaat, satış ve kiralama, ihaleler, kulüpler, kredi notu, Meydan sohbeti ve usta taktikleri.">
 <meta property="og:url" content="https://ismetaltnbas.github.io/katkatzengin/kilavuz.html">
 <meta property="og:image" content="https://ismetaltnbas.github.io/katkatzengin/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ismetaltnbas.github.io/katkatzengin/img/og.jpg">
 <link rel="icon" type="image/png" sizes="32x32" href="img/icon-32.png">
 <link rel="apple-touch-icon" href="img/icon-180.png">
+<link rel="manifest" href="site.webmanifest">
 <link rel="stylesheet" href="style.css">
 <script type="application/ld+json">
 {
@@ -31,7 +37,7 @@
         { "@type": "HowToStep", "name": "Şirketini kur", "text": "Ülkeni, karakterini ve şirket adını seç." },
         { "@type": "HowToStep", "name": "Arsa al", "text": "Şehir sekmesinde bir bölge ve ilçe seç, uygun fiyatlı bir arsa satın al; zemin etüdü yaptır." },
         { "@type": "HowToStep", "name": "Projeyi başlat", "text": "Bina tipini, kat sayısını, daire planını ve kaliteyi seç; işçileri ata ve inşaatı başlat." },
-        { "@type": "HowToStep", "name": "Daireleri sat", "text": "Bina bitince Projeler › Kat İlan'da fiyatı ayarla, alıcı tekliflerini kabul et ya da emlakçıyla anlaş." }
+        { "@type": "HowToStep", "name": "Daireleri sat", "text": "Bina bitince Projeler › Kat Kat Kat İlan'da fiyatı ayarla, alıcı tekliflerini kabul et ya da emlakçıyla anlaş." }
       ]
     },
     {
@@ -49,16 +55,10 @@
 <a class="skip" href="#icerik">İçeriğe geç</a>
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="./"><img src="img/icon-180.png" alt="" width="34" height="34">Kat Kat Zengin</a>
-    <nav class="menu" aria-label="Ana menü">
-      <a href="./">Ana sayfa</a>
-      <a href="kilavuz.html" aria-current="page">Kılavuz</a>
-      <a href="videolar.html">Videolar</a>
-      <a href="./#sss">SSS</a>
-    </nav>
+    <a class="brand" href="./"><img src="img/icon-180.png" alt="" width="36" height="36">Kat Kat <b>Zengin</b></a>
+    <nav class="menu" aria-label="Ana menü"><a href="./">Ana sayfa</a><a href="kilavuz.html" aria-current="page">Kılavuz</a><a href="videolar.html">Videolar</a><a href="destek.html">Destek</a><a class="cta-sm" href="./#indir">İndir</a></nav>
   </div>
 </header>
-
 <main id="icerik" class="wrap doc">
   <nav class="toc" aria-label="Kılavuz içindekiler">
     <b>İçindekiler</b>
@@ -66,7 +66,7 @@
     <a href="#ofis">2. Ofis ekranı</a>
     <a href="#arsa">3. Arsa ve harita</a>
     <a href="#insaat">4. İnşaat</a>
-    <a href="#satis">5. Satış ve Kat İlan</a>
+    <a href="#satis">5. Satış ve Kat Kat Kat İlan</a>
     <a href="#donusum">6. Kentsel dönüşüm</a>
     <a href="#ihale">7. İhaleler ve kamu işleri</a>
     <a href="#sirket">8. Şirketim: ekip ve tesisler</a>
@@ -74,7 +74,10 @@
     <a href="#malzeme">10. Malzeme: şimdi al ya da bekle</a>
     <a href="#borsa">11. Borsa ve fonlar</a>
     <a href="#aile">12. Aile</a>
-    <a href="#rekabet">13. Rekabet ve haftalık lig</a>
+    <a href="#rekabet">13. Rekabet ve aylık lig</a>
+    <a href="#meydan">13b. Meydan: sohbet</a>
+    <a href="#kulup">13c. Kulüpler</a>
+    <a href="#rutbe">13d. Rütbe ve nabız</a>
     <a href="#odul">14. Günlük ödül ve çark</a>
     <a href="#iflas">15. Para sıkıntısı ve iflas</a>
     <a href="#ipuclari">16. Usta taktikleri</a>
@@ -83,11 +86,11 @@
   <article>
     <div class="kicker">Kullanım kılavuzu</div>
     <h1>Kat Kat Zengin rehberi</h1>
-    <p class="lead">İlk arsandan haftalık lig şampiyonluğuna kadar bilmen gereken her şey. Oyunun üst çubuğundaki can simidi (rehber) düğmesi de Nuri Usta'yı çağırır.</p>
+    <p class="lead">İlk arsandan aylık lig şampiyonluğuna kadar bilmen gereken her şey. Oyunun üst çubuğundaki can simidi (rehber) düğmesi de İsmet Usta'yı çağırır.</p>
 
     <h2 id="baslangic">1. Başlangıç</h2>
     <p>Yeni oyunda önce ülkeni seçersin (Türkiye, Almanya, Birleşik Krallık, BAE). Ülke; şehirleri, ilçeleri ve para birimini belirler. Sonra karakterini, adını ve şirket adını seçersin. İsmi sonradan Ayarlar'dan bir kez ücretsiz değiştirebilirsin.</p>
-    <div class="tip">💡 İlk arsanı alana kadar zaman akmaz. Acele etme; Nuri Usta sana uygun bir arsayı gösterir ve ilk adımları birlikte atarsınız.</div>
+    <div class="tip">💡 İlk arsanı alana kadar zaman akmaz. Acele etme; İsmet Usta sana uygun bir arsayı gösterir ve ilk adımları birlikte atarsınız.</div>
 
     <h2 id="ofis">2. Ofis ekranı</h2>
     <p>Ofis, şirketinin özetidir ve tek bakışta ekrana sığar:</p>
@@ -96,7 +99,7 @@
       <li><b>Öneri şeridi:</b> o an en önemli işi söyler (bekleyen alıcı, hazır ödül, eksik personel, iflas uyarısı…). Dokununca ilgili ekrana gider.</li>
       <li><b>Kısayollar:</b> Şirketim, Borsa, Defter, Gazete, İhaleler, Kamu işleri, Teklifler.</li>
       <li><b>Projeler ve mahalle nabzı:</b> süren projelerin ve sakinlerin yorumları sırayla döner.</li>
-      <li><b>Rekabet:</b> şirket adının altındaki 🏆 satırı arkadaş sıralamasını ve haftalık ligi açar.</li>
+      <li><b>Rekabet:</b> şirket adının altındaki 🏆 satırı arkadaş sıralamasını ve aylık ligi açar.</li>
     </ul>
 
     <h2 id="arsa">3. Arsa ve harita</h2>
@@ -104,7 +107,8 @@
     <ul>
       <li><b>Zemin etüdü:</b> arsanın zemin kalitesini gösterir. Kötü zemin iyileştirme maliyeti ekler ama Sağlamlık Karnesi'ni korur.</li>
       <li><b>Kat karşılığı teklifleri:</b> arsa sahipleri arsalarını bedelsiz, daire payı karşılığında önerir. Bir kez pazarlık hakkın vardır; teklif reddedilse de anlaşma iptal olmaz.</li>
-      <li><b>Şube:</b> itibarın yükselince başka şehirlerde şube açabilirsin.</li>
+      <li><b>Ruhsat:</b> yeni bir ilçede arsa almak için o ilçenin imar ruhsatı gerekir (ekonomik ve orta ilçelerde 1, premium 2, lüks 3). Ruhsat rütbe atlayınca, başarımlarla, aylık ligde ve Market'ten gelir.</li>
+      <li><b>Şube:</b> başka bir şehirde şube, Şehir › Şube aç ekranından <b>şube hakkı</b> satın alınarak açılır (uygulama içi satın alma). Ana şehrin ve tüm ilçeleri oyun içinde açılır.</li>
     </ul>
 
     <h2 id="insaat">4. İnşaat</h2>
@@ -118,13 +122,14 @@
     <p>Her aşamanın maliyeti aşama başında o günün malzeme fiyatlarıyla ödenir. Kasa yetmezse şantiye bekler. İşçi sayısı idealine yaklaştıkça inşaat hızlanır; Şirketim › Ekip'te her şantiyenin yanındaki −/+ ve <b>Doldur</b> düğmeleriyle işçileri kaydırabilirsin.</p>
     <div class="tip">⚠ "Malzemeden kısmak" maliyeti düşürür ama yapı denetiminde yakalanırsan ceza ve itibar kaybı yaşarsın.</div>
 
-    <h2 id="satis">5. Satış ve Kat İlan</h2>
-    <p>Biten projelerin daireleri Projeler › <b>Kat İlan</b> sitesinde listelenir. Burada:</p>
+    <h2 id="satis">5. Satış ve Kat Kat Kat İlan</h2>
+    <p>Biten bina <b>kendiliğinden satılmaz ve kiralanmaz</b>. Projeler › <b>Kat Kat Kat İlan</b>'ın iki sekmesi var: <b>Satılık</b> ve <b>Kiralık</b>.</p>
     <ul>
+      <li><b>Kendin ilana koy</b> (küçük ilan ücreti, komisyon yok) ya da <b>emlakçıyla anlaş</b> (ilan ücreti yok, daha hızlı, komisyonlu).</li>
       <li>Fiyatı %80–%130 arasında ayarlarsın; bölgedeki ilanlarla karşılaştırması yanında yazar.</li>
       <li><b>Vitrin</b> ilanı öne çıkarır, <b>Açık ev</b> hemen bir alıcı getirir.</li>
       <li><b>Emlakçı</b> tutabilirsin: mahalle emlakçısı ucuz, kurumsal ofis hızlı, lüks danışman pahalı semtlerde fiyatı artırır. Emlakçılar satıştan komisyon alır.</li>
-      <li>Daireleri <b>kiraya</b> verip aylık kira geliri toplayabilirsin.</li>
+      <li><b>Kiralık ilan:</b> boş daireyi kiralık ilana koy, kirayı piyasa kirasının %80–%120'si arasında sen belirle. Ucuz kira: kiracı çabuk gelir, uzun oturur; pahalı kira: daire boş bekleyebilir. Kira sözleşmede sabitlenir ve her ay kasana girer.</li>
       <li>Alıcılar teklif verir; kabul et, reddet ya da pazarlık et. Pazarlık riskli: alıcı vazgeçebilir.</li>
     </ul>
     <p>İnşaat temelden sonra <b>maketten ön satış</b> da yapabilirsin; nakit akışını rahatlatır ama daireyi indirimli satarsın.</p>
@@ -139,15 +144,25 @@
     <div class="tip">💡 Pazarlık asla anlaşmayı bozmaz; en kötü ihtimalle "daha düşemem" der. İtibarın yüksekse ikna şansın artar.</div>
 
     <h2 id="ihale">7. İhaleler ve kamu işleri</h2>
-    <p>İhaleler sekmesinde park, kütüphane, sağlık ocağı, okul, kavşak ve spor salonu ihaleleri açılır. Kapalı zarf usulü teklif verirsin: rakiplerin teklifini göremezsin, son gün zarflar açılır ve <b>en düşük geçerli teklif</b> kazanır. Yaklaşık maliyetin %80'inin altındaki teklifler "aşırı düşük" sayılıp geçersiz olur.</p>
+    <p>İhaleler sekmesinde park, kütüphane, sağlık ocağı, okul, kavşak ve spor salonu ihaleleri açılır. Kapalı zarf usulü teklif verirsin: rakiplerin teklifini göremezsin, son gün zarflar açılır ve <b>en düşük geçerli teklif</b> kazanır. Yaklaşık maliyetin %75'inin altındaki teklifler "aşırı düşük" sayılıp geçersiz olur.</p>
+    <table>
+      <tr><th>Teklif</th><th>Kazanma şansı</th><th>Ortalama kâr</th></tr>
+      <tr><td>%80</td><td>~%86</td><td>%5 (zarar riski var)</td></tr>
+      <tr><td>%84</td><td>~%60</td><td>%9</td></tr>
+      <tr><td>%88</td><td>~%41</td><td>%13</td></tr>
+      <tr><td>%92</td><td>~%26</td><td>%17</td></tr>
+    </table>
+    <p>Sonuçlanan ihaleler tablosunda kimin kaç teklifle kazandığını ve senin kaçıncı sırada kaldığını görürsün; Kamu işlerim'de teslim edilen işlerin harcamasını, süresini ve kârını.</p>
     <p>Kazanırsan avans alırsın, işi işçilerinle yaparsın; teslimde kalan bedel ve itibar gelir. Mega projeler (teleferik, metro, köprü, havalimanı…) yüksek itibarla açılır ve yıllarca gelir getirir.</p>
 
     <h2 id="sirket">8. Şirketim: ekip ve tesisler</h2>
     <table>
       <tr><th>Sekme</th><th>İçerik</th></tr>
       <tr><td>Ekip</td><td>İşçiler, ustabaşılar (her birinin huyu farklı) ve personel.</td></tr>
-      <tr><td>Tesisler</td><td>Ofis (işçi kapasitesi), makine parkı (inşaat hızı), beton santrali, demirhane gibi tesisler (malzeme indirimi).</td></tr>
-      <tr><td>Yatırımlar</td><td>Ar-Ge (maliyet), pazarlama (satış hızı), sigorta (kaza zararı) ve spor kulüpleri.</td></tr>
+      <tr><td>Personel</td><td>Muhasebeci, avukat, iş güvenliği uzmanı, satış danışmanı, mimar, şantiye şefi: Başlangıç / Orta / Deneyimli seviyede.</td></tr>
+      <tr><td>Tesisler</td><td>Ofis (9 kademe, işçi kapasitesi), <b>makine parkı</b> (8 makine; her biri genel hız +%9 ve kendi aşamasında ek hız: kamyon hafriyat, mikser temel, kule vinç yüksek bina…), beton santrali ve demirhane gibi tesisler (malzeme indirimi).</td></tr>
+      <tr><td>Yatırımlar</td><td>Ar-Ge (maliyet), pazarlama (satış hızı), sigorta (kaza zararı).</td></tr>
+      <tr><td>Kulüpler</td><td>18 kulüplük lig: aynı anda 3 forma sponsorluğu, istediğin kadar kulüp sahipliği (ayrıntı aşağıda).</td></tr>
       <tr><td>Prestij</td><td>Prestij varlıkları ve şehre armağanlar (itibar ve Miras Puanı).</td></tr>
     </table>
     <p><b>Personel danışmanı</b> neyin eksik olduğunu söyler: kaza ya da denetim yaşadıysan avukat, ciron büyüdüyse muhasebeci, satılmayan daireler biriktiyse satış danışmanı, çok şantiyen varsa şantiye şefi önerir. Gerekli personel "GEREKLİ" etiketiyle işaretlenir.</p>
@@ -179,7 +194,7 @@
     <h2 id="rekabet">13. Rekabet ve aylık lig</h2>
     <p>Ofis'teki 🏆 Rekabet satırına dokun:</p>
     <ul>
-      <li><b>Firma kodun</b> KKZ-XXXX-XXXX biçimindedir. Arkadaşın bu kodu <b>Arkadaş ekle</b> kutusuna yazınca birbirinizi görürsünüz.</li>
+      <li><b>Firma kodun</b> KKZ-XXXX-XXXX biçimindedir. Kodu yazıp <b>arkadaşlık isteği</b> gönder; karşı taraf kabul edince arkadaş olursunuz. İki taraf birbirine istek gönderirse hemen eklenirsiniz.</li>
       <li><b>WhatsApp</b> ya da <b>SMS</b> düğmesiyle davet mesajı gönder; arkadaşın mesajı olduğu gibi yapıştırarak da seni ekleyebilir.</li>
       <li><b>Arkadaşlar</b> sekmesi şirket değerine göre sıralar ve bu ayki büyümeyi gösterir.</li>
       <li><b>Aylık lig</b> her ayın 1'inde sıfırlanır ve iki sıralaması vardır: <b>Ülke</b> ve <b>İlim</b>. İl ligine katılmak için ilini seç.</li>
@@ -191,7 +206,22 @@
       <tr><td>🥉 3.</td><td>2 Ruhsat + ikramiye</td><td>1 Ruhsat + ikramiye</td></tr>
     </table>
     <p>Ödül, ligde o ay en az 3 aktif oyuncu varsa verilir; oyunu açtığında kasana eklenir ve kupa olarak sergilenir. Sıralama sunucuda hesaplanır: aynı hesabın kopyası, saat oynatma ya da ay ortasında il değiştirme işe yaramaz.</p>
-    <p>Sunucuya yalnızca firma kartın gider (şirket adı, patron adı, il, değer, proje sayısı, itibar). Ayarlar › <b>Çevrimiçi verimi sil</b> ile istediğin an silebilirsin.</p>
+    <p>Sunucuya firma kartın (şirket ve patron adı, il, değer, istatistikler), arkadaşlıkların ve Meydan mesajların gider. Ayarlar › <b>Çevrimiçi verimi sil</b> ile hepsini istediğin an kalıcı olarak silebilirsin.</p>
+
+    <h2 id="meydan">13b. Meydan: oyuncu sohbeti</h2>
+    <ul>
+      <li>Üst çubuktaki 💬 düğmesi Meydan'ı açar: <b>ülke meydanı</b>, seçtiğin ilin <b>il meydanı</b> ve arkadaşlarınla <b>özel mesaj</b>.</li>
+      <li>Mesajlara tepki ver (🏗 👏 🔥 😂 🤝), yanıtla; şirketini, son binanı ya da kazandığın ihaleyi <b>kart</b> olarak paylaş.</li>
+      <li>Firma adına dokun: arkadaşlık isteği gönder ya da <b>engelle</b>. Uygunsuz mesajı <b>⚑ Şikâyet</b> et.</li>
+      <li>⚙ Ayarlar: özel mesajları ve arkadaşlık isteklerini kapat, engellediklerini yönet. Özel sohbeti 🔕 sessize alabilirsin.</li>
+      <li>Küfür, bağlantı, telefon ve e-posta otomatik süzülür; kurallara uymayan mesaj gizlenir, hesap susturulabilir.</li>
+    </ul>
+
+    <h2 id="kulup">13c. Kulüpler ve sponsorluk</h2>
+    <p>Şirket › Kulüpler'de 18 kulüplük Üst Lig var (şehirler gerçek, kulüpler kurgusal). <b>Forma sponsorluğu</b> 30 gün satışları hızlandırır ve itibar verir; aynı anda en çok 3 kulübe sponsor olursun, etkiler azalarak toplanır. <b>Kulüp sahibi</b> olunca her ay gelir/gider gelir, Üst Ligdeki her kulübün taraftar etkisi satışlara +%2 ekler. Sezon sonunda ilk 2 Yıldızlar Turnuvası'na, 3–4 Kıta Kupası'na gider; son 3 alt lige düşer. Transfer bütçesi kulübün gücünü artırır.</p>
+
+    <h2 id="rutbe">13d. Rütbe ve itibar</h2>
+    <p>Üst çubuktaki rütbeye dokun: altı rütbe (Çırak firma 0, Kalfa 15, Usta 30, Müteahhit 50, Büyük müteahhit 70, Şehrin kurucusu 88), her birinin kredi limiti, alıcı teklifi ve ihale teminatı avantajı, o aralıkta açılan ilçe ve projeler. Rütbe atlayınca 2 Ruhsat hediye. <b>Mahalle nabzı</b> 4,2★ ve üstündeyse satışlar +%5 ve ayda +1 itibar; 3★ ve altındaysa tersi.</p>
 
     <h2 id="odul">14. Günlük ödül ve çark</h2>
     <p>Her gün oyunu açtığında <b>günlük ödül</b> penceresi çıkar. 7 günlük seri vardır; 7. gün 1 Ruhsat kazanırsın. Bir gün kaçırırsan seri başa döner. Ofis'teki <b>Çark</b> günde bir kez çevrilir: ikramiye, itibar ya da malzeme indirimi verir.</p>
@@ -205,19 +235,31 @@
       <li>Kasada her zaman bir sonraki aşamanın parası kalsın; şantiyenin beklemesi en pahalı şeydir.</li>
       <li>Malzeme ortalamanın altındayken uzun projelerin malzemesini stokla.</li>
       <li>Kredi kullanacaksan küçük bir krediyi çekip zamanında kapat: kredi notun yükselir, sonraki büyük kredi ucuzlar.</li>
-      <li>İhalelerde yaklaşık maliyetin %85–95'i genellikle hem kazandırır hem kâr bırakır.</li>
+      <li>İhalelerde %82–88 arası hem makul kazanma şansı hem kâr verir; %80 altı kazanır ama zarar ettirebilir.</li>
       <li>Boştaki parayı kasada bekletme; para piyasası fonu güvenli bir getiri sağlar.</li>
       <li>Birden çok şantiyen varsa şantiye şefi ve avukat kendini kısa sürede amorti eder.</li>
     </ul>
     <p><a class="btn gold" href="videolar.html">Videolu anlatımlar →</a></p>
   </article>
 </main>
-
 <footer>
   <div class="wrap">
-    <span>© 2026 Kat Kat Zengin</span>
-    <nav><a href="./">Ana sayfa</a><a href="videolar.html">Videolar</a><a href="gizlilik.html">Gizlilik</a></nav>
+    <div class="cols">
+      <div>
+        <a class="brand" href="./" style="display:flex;margin-bottom:12px"><img src="img/icon-180.png" alt="" width="36" height="36">Kat Kat <b>Zengin</b></a>
+        <p style="margin:0;max-width:340px">Türkçe müteahhitlik ve inşaat şirketi simülasyonu. Arsa al, kat çık, şehrin kurucusu ol.</p>
+      </div>
+      <div><h4>Oyun</h4><a href="./#ozellikler">Özellikler</a><a href="./#rutbe">Rütbeler</a><a href="kilavuz.html">Kılavuz</a><a href="videolar.html">Videolar</a></div>
+      <div><h4>Destek</h4><a href="destek.html">Yardım ve iletişim</a><a href="destek.html#sss">Sık sorulanlar</a><a href="veri-silme.html">Veri silme</a></div>
+      <div><h4>Yasal</h4><a href="gizlilik.html">Gizlilik politikası</a><a href="kosullar.html">Kullanım koşulları</a></div>
+    </div>
+    <div class="legal"><span>© 2026 Kat Kat Zengin. Tüm içerik özgündür; oyundaki firma, kulüp, hisse ve kişiler kurgusaldır.</span><span>Apple ve App Store, Apple Inc.'in; Google Play, Google LLC'nin ticari markalarıdır.</span></div>
   </div>
 </footer>
+<script>
+// Görünürken yumuşak belirme (JS kapalıysa içerik zaten görünür)
+(function(){var els=document.querySelectorAll('.reveal');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}})},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)});})();
+</script>
 </body>
 </html>
