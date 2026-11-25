@@ -23,6 +23,8 @@
 <link rel="icon" type="image/png" sizes="32x32" href="img/icon-32.png">
 <link rel="apple-touch-icon" href="img/icon-180.png">
 <link rel="manifest" href="site.webmanifest">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -56,14 +58,6 @@
     <div class="legal"><span>© 2026 Kat Kat Zengin. Tüm içerik özgündür; oyundaki firma, kulüp, hisse ve kişiler kurgusaldır.</span><span>Apple ve App Store, Apple Inc.'in; Google Play, Google LLC'nin ticari markalarıdır.</span></div>
   </div>
 </footer>
-<script>
-// Mobil menü
-(function(){var b=document.querySelector('.burger'),m=document.getElementById('menu');if(!b||!m)return;
-b.addEventListener('click',function(){var o=document.body.classList.toggle('nav-open');b.setAttribute('aria-expanded',o?'true':'false');});
-m.addEventListener('click',function(e){if(e.target.tagName==='A'){document.body.classList.remove('nav-open');b.setAttribute('aria-expanded','false');}});})();
-// Görünürken yumuşak belirme (JS kapalıysa içerik zaten görünür)
-(function(){var els=document.querySelectorAll('.reveal');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
-var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}})},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)});})();
-</script>
+<script src="site.js" defer></script>
 </body>
 </html>
