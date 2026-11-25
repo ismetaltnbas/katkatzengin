@@ -300,3 +300,18 @@ footer a:hover { color: #F6D98A; transform: translateX(3px); }
 footer .brand b { color: #E2B04A; }
 footer .legal { border-top: 1px solid #E2B04A26; color: #8592A3; }
 footer .legal span:first-child::before { content: "◆ "; color: #E2B04A; }
+
+/* Ülke seçimi */
+.countries { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 36px; }
+.country { position: relative; padding: 22px 20px 20px; border-radius: 16px; background: linear-gradient(180deg, #101A27, #0A111A); border: 1px solid #E2B04A26; box-shadow: 0 10px 30px #0006; transition: border-color .3s, transform .3s; overflow: hidden; }
+.country::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 2px; background: linear-gradient(90deg, transparent, #E2B04A, transparent); opacity: .7; }
+.country:hover { border-color: #E2B04A80; transform: translateY(-3px); }
+.country .cc { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+.country .code { font-size: 12px; font-weight: 800; letter-spacing: 2px; color: #0A0F16; background: linear-gradient(180deg, #F6D98A, #C8922E); padding: 4px 9px; border-radius: 6px; }
+.country .cur { font-family: var(--serif, Georgia, serif); font-size: 30px; font-weight: 700; line-height: 1; background: linear-gradient(180deg, #F6D98A, #C8922E); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.country h3 { margin: 0 0 6px; font-size: 18px; color: #F3F5F8; }
+.country .cities { margin: 0 0 4px; font-weight: 700; font-size: 14px; color: #E2B04A; }
+.country .cnote { margin: 0; font-size: 13px; color: #9AA7B8; }
+@media (max-width: 980px) { .countries { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .countries { grid-template-columns: 1fr; } }
+.country .cur.long { font-size: 22px; letter-spacing: 1px; }
