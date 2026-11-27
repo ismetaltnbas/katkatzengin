@@ -7,6 +7,7 @@
 - [Ana sayfa](https://katkatzengin.com/): oyunun özellikleri, ülkeler, ekran görüntüleri, sık sorulanlar
 - [Kılavuz](https://katkatzengin.com/kilavuz.html): nasıl oynanır, taktikler
 - [Destek](https://katkatzengin.com/destek.html): iletişim destek@katkatzengin.com
+- [İşbirliği ve reklam](https://katkatzengin.com/isbirligi.html): marka, sponsorluk ve basın isbirligi@katkatzengin.com
 - [Gizlilik](https://katkatzengin.com/gizlilik.html)
 
 ## Yazılar
